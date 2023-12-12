@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 *{
     padding: 0;
@@ -13,13 +14,13 @@
     scroll-behavior: smooth;
     
 }
+
 nav{
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
     backdrop-filter: blur(10rem);
-    
 }
 .outerbox{
     display: flex;
@@ -33,7 +34,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 30rem;
+    width: 22rem;
 }
 .menu li{
     font-size: 1.2rem;
@@ -51,7 +52,25 @@ nav{
 .icon{
     width: 4rem;
 }
+#contact-btn{
+    width: 8rem;
+    height: 2.5rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    border:  2px solid;
+    color: #050505;
+    transition: background-color 0.3s, color 0.3s;
+}
+#contact-btn:hover{
+    background: #050505;
+    color: #efefef;
+    cursor: pointer;
+}
 
+/* For all sections */
 .section-heading{
     font-size: 2.5rem;
     font-family: 'Heebo', sans-serif;
@@ -112,24 +131,24 @@ nav{
 #name{
     color: #050505;
     font-family: 'Cinzel', serif;
-
 }
 #about-left h5{
     font-size: 2rem;
 }
-#about-left a{
+#resume{
     width: 10rem;
-    height: 3rem;
+    margin: 0.8rem 0rem;
 }
 #cv-button{
     width: 10rem;
     height: 3rem;
-    margin: 1rem 0rem;
     font-size: 1.2rem;
     background: none;
     border-radius: 1.5rem;
     font-weight: bold;
-    border: 2px solid 
+    border: 2px solid;
+    color: #050505;
+    transition: background-color 0.3s, color 0.3s;
 }
 #cv-button:hover{
     background: #050505;
@@ -214,8 +233,42 @@ nav{
 
 
 
-/* Contact Me */
-#contactme{
-    height:100vh;
-    border: 1px solid;
+
+
+
+/* footer */
+#footer{
+    background-color: #0f0f0f;
+    padding: 1rem 0rem;
 }
+#social{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.icon-box{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #f0f0f0;
+    stroke: #1a1a1a;
+}
+.icon-box:hover{
+    color: #1a1a1a;
+    stroke: #f0f0f0;
+}
+#footer-text{
+    text-align: center;
+    color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+
+
