@@ -1,3 +1,14 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuBtn.addEventListener('click', function () {
+      navLinks.classList.toggle('show-mobile');
+  });
+});
+
+
 // Add event listeners to update the active class when scrolling
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".link");
