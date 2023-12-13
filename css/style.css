@@ -15,7 +15,7 @@
     
 }
 
-nav{
+header{
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -23,22 +23,33 @@ nav{
     backdrop-filter: blur(10rem);
 }
 .outerbox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem 0rem;
-}
-.menu{
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 22rem;
+    margin: 1rem auto;
 }
-.menu li{
+#nav{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 23em;
+}
+.nav-links li{
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
+}
+.nav-links #contact{
+    display: none;
 }
 .link {
     color: #6e6e6e;
@@ -51,6 +62,9 @@ nav{
 }
 .icon{
     width: 4rem;
+}
+#contact{
+    display: none;
 }
 #contact-btn{
     width: 8rem;
@@ -69,6 +83,17 @@ nav{
     color: #efefef;
     cursor: pointer;
 }
+.menu-btn{
+    display: none;
+    border: none;
+    background:none;
+}
+.menu{
+    width: 2rem;
+    border:none;
+}
+
+
 
 /* For all sections */
 .section-heading{
@@ -111,12 +136,13 @@ nav{
 }
 
 /* About */
-#about{
+#about {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 6rem 0rem 0rem 0rem;
+    margin: 6rem auto 0rem;
+    width: 80vw;
     overflow-x: hidden;
 }
 #about-left{
@@ -156,10 +182,12 @@ nav{
     color: #efefef;
     cursor: pointer;
 }
-#about-right img{
-    width: 30rem;
+#about-right{
+    width: 50%;
 }
-
+#about-right img{
+    width: 100%;
+}
 
 
 /* Education */
@@ -170,15 +198,15 @@ nav{
 #education-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    width: 90vw;
+    margin: auto;
 }
 .boxes {
     margin: 3rem 0rem;
     border: 2px solid #0f0f0f;
-    width: 25%;
+    width: 28%;
     height: 12rem;
     background: #0f0f0f;
     color: #f0f0f0;
@@ -271,5 +299,86 @@ nav{
     margin: 1rem 0rem 0rem 0rem;
 }
 
+@media screen and (max-width:893px) and (min-width:770px){
+    .boxes {
+        height: 15rem;
+    }
+    #skills-container {
+        width: 80vw;
+    }
+    #social {
+        width: 70vw;
+    }
 
 
+}
+
+@media screen and (min-width:768px) {
+    .nav-links{
+        display: flex;
+    }
+    #contact{
+        display: block;
+    }
+}
+  
+@media screen and (max-width:767px) {
+    .menu-btn{
+        display: block;
+    }
+    .nav-links.show-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100vw;
+        background: rgb(255 255 255);
+        backdrop-filter: blur(10rem);
+        padding: 1rem;
+    }
+    .nav-links #contact{
+        display: block;
+    }
+    #about{
+        flex-direction: column-reverse;
+        width: 90vw;
+    }
+    #about-left h2 {
+        font-size: 2rem;
+    }
+    #cv-button {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    #about-left h5 {
+        font-size: 1.8rem;
+    }
+    #about-left h2 {
+        font-size: 2rem;
+    }
+    #about-right{
+        width: 100%;
+    }
+    #about-right img {
+        width: 100%;
+    }
+    .section-heading {
+        font-size: 2.2rem;
+    }
+    #education-container {
+        flex-direction: column;
+    }
+    .boxes {
+        margin: 2rem 0rem;
+        width: 90%;
+    }
+    #skills-container {
+        width: 90vw;
+    }
+    #social {
+        width: 90vw;
+    }
+}
