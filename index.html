@@ -8,29 +8,29 @@
     <link rel="shortcut icon" href="media\favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css\style.css">
 
-</head>
-
 <body>
     <header>
-        <nav>
-            <div class="outerbox">
-                <a href="#"><img class="icon" src="media\logoo.png" alt="Rishi"></a>
-                <ul class="menu">
+        <div class="outerbox">
+            <a href="#"><img class="icon" src="media\logoo.png" alt="Rishi"></a>
+                <ul class="nav-links">
                     <li><a class="link" href="#about">About</a></li>
                     <li><a class="link" href="#education">Education</a></li>
                     <li><a class="link" href="#skills">Skills</a></li>
                     <li><a class="link" href="#projects">Projects</a></li>
+                    <a id="contact" href="mailto:rishijha238@gmail.com"><button id="contact-btn">Contact Me</button></a>
                 </ul>
                 <a id="contact" href="mailto:rishijha238@gmail.com"><button id="contact-btn">Contact Me</button></a>
-            </div>
-        </nav>
+            <button type="button" class="menu-btn">
+                <img src="media\menu.svg" alt="menu" class="menu">
+            </button>
+        </div>
     </header>
 
     <main>
 
         <section class="active section" id="about">
             <div id="about-left" class="slide-left">
-                <h2>Hello👋 I'm <span id="name">Rishi Kumar</span> </h2>
+                <h2>Hello👋 I'm <p  id="name">Rishi Kumar</p> </h2>
                 <h5>A Software Engineer</h5>
                 <a href="media\rishi resume.pdf" id="resume" target="_blank"><button id="cv-button">Download CV</button></a>
             </div>
@@ -136,31 +136,43 @@
     <footer id="footer">
         <div id="social">
             <a class="icon-box" href="https://www.instagram.com/rishi.jha23/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" stroke-width ="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 50 50">
-                    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 50 50">
+                    <path
+                        d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                    </path>
                 </svg>
             </a>
             <a class="icon-box" href="https://twitter.com/im_Rishi23" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="#1a1a1a" stroke-width ="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 50 50">
-                    <path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"></path>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="#1a1a1a" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 50 50">
+                    <path
+                        d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z">
+                    </path>
+                </svg>
             </a>
             <a class="icon-box" href="https://www.linkedin.com/in/rishi-kumar-7104851b3/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width ="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 50 50">
-                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 50 50">
+                    <path
+                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                    </path>
                 </svg>
             </a>
             <a class="icon-box" href="https://github.com/iAmRishijha" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="#1a1a1a" stroke-width ="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 48 48">
-                    <path d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 31.66536 35.956939 38.122519 29 40.251953 L 29 35.136719 C 29 33.226635 27.899316 31.588619 26.308594 30.773438 A 10 8 0 0 0 32.4375 18.720703 C 32.881044 17.355414 33.376523 14.960672 32.199219 13.076172 C 29.929345 13.076172 28.464667 14.632086 27.765625 15.599609 A 10 8 0 0 0 24 15 A 10 8 0 0 0 20.230469 15.59375 C 19.529731 14.625773 18.066226 13.076172 15.800781 13.076172 C 14.449711 15.238817 15.28492 17.564557 15.732422 18.513672 A 10 8 0 0 0 21.681641 30.779297 C 20.3755 31.452483 19.397283 32.674042 19.097656 34.15625 L 17.783203 34.15625 C 16.486203 34.15625 15.98225 33.629234 15.28125 32.740234 C 14.58925 31.851234 13.845172 31.253859 12.951172 31.005859 C 12.469172 30.954859 12.144453 31.321484 12.564453 31.646484 C 13.983453 32.612484 14.081391 34.193516 14.650391 35.228516 C 15.168391 36.160516 16.229687 37 17.429688 37 L 19 37 L 19 40.251953 C 12.043061 38.122519 7 31.66536 7 24 C 7 14.593391 14.593385 7 24 7 z"></path>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="#1a1a1a" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 48 48">
+                    <path
+                        d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 31.66536 35.956939 38.122519 29 40.251953 L 29 35.136719 C 29 33.226635 27.899316 31.588619 26.308594 30.773438 A 10 8 0 0 0 32.4375 18.720703 C 32.881044 17.355414 33.376523 14.960672 32.199219 13.076172 C 29.929345 13.076172 28.464667 14.632086 27.765625 15.599609 A 10 8 0 0 0 24 15 A 10 8 0 0 0 20.230469 15.59375 C 19.529731 14.625773 18.066226 13.076172 15.800781 13.076172 C 14.449711 15.238817 15.28492 17.564557 15.732422 18.513672 A 10 8 0 0 0 21.681641 30.779297 C 20.3755 31.452483 19.397283 32.674042 19.097656 34.15625 L 17.783203 34.15625 C 16.486203 34.15625 15.98225 33.629234 15.28125 32.740234 C 14.58925 31.851234 13.845172 31.253859 12.951172 31.005859 C 12.469172 30.954859 12.144453 31.321484 12.564453 31.646484 C 13.983453 32.612484 14.081391 34.193516 14.650391 35.228516 C 15.168391 36.160516 16.229687 37 17.429688 37 L 19 37 L 19 40.251953 C 12.043061 38.122519 7 31.66536 7 24 C 7 14.593391 14.593385 7 24 7 z">
+                    </path>
+                </svg>
             </a>
-            
+
         </div>
         <h4 id="footer-text">Made with ❤️ by Rishi</h4>
     </footer>
 
-      
+
     <script src="js\script.js"></script>
 </body>
 
